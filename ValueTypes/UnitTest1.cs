@@ -18,14 +18,14 @@ namespace ValueTypes
 
         }
         [TestClass]
-        public class Characters()
+        public class Characters
         {
-        char character = 'a';
-        char symbol = '?';
-        char numbers = '7';
-        char space = ' ';
-        char specialCharacter = '\n';
-
+            char character = 'a';
+            char symbol = '?';
+            char numbers = '7';
+            char space = ' ';
+            char specialCharacter = '\n';
+        }
         [TestMethod]
         public void Decimals()
         {
@@ -35,22 +35,40 @@ namespace ValueTypes
         }
         [TestMethod]
 
-        public void WholeNumbers();
+        public void WholeNumbers()
         {
-         byte byteExample = 255;
-        sbyte sByteExample = 127;
-        short shortExample = 32767;
-        Int16 anotherShortExample = 32000;
-        int intmin = -2147483647;
-        Int32 intMax = 2147483647;
-        long longExample = 9223372036854775807;
-        Int64 longMin = -9223372036854775807;
+            byte byteExample = 255;
+            sbyte sByteExample = 127;
+            short shortExample = 32767;
+            Int16 anotherShortExample = 32000;
+            int intmin = -2147483647;
+            Int32 intMax = 2147483647;
+            long longExample = 9223372036854775807;
+            Int64 longMin = -9223372036854775807;
 
-        int a = 15;
-        int b = -15;
-    }
+            int a = 15;
+            int b = -15;
+        }
+        
+        enum PastryType {Cake, Cupcake, Eclaire, Petitfour, Croissant}
+        [TestMethod]
+        public void Enums()
+        {
+            PastryType myPastry = PastryType.Eclaire;
+            PastryType anotherOne = PastryType.Cake;
+        }
+        [TestMethod]
+        public void Structs()
+        {
+            DateTime today = DateTime.Today;
+
+            DateTime birthday = new DateTime(1800, 7, 23);
+
+        }
     }
 }
+
+
 
 
 
