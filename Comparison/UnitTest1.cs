@@ -74,7 +74,7 @@ namespace Comparison
             Console.WriteLine($"False or True {fOrT}");
             Console.WriteLine($"False or False {fOrF}");
 
-           
+
 
 
 

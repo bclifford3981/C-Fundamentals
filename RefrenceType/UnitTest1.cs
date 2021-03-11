@@ -71,17 +71,18 @@ namespace RefrenceType
             HashSet<int> uniqueList = new HashSet<int>();
             Stack<string> lastInFirstOut = new Stack<string>();
         }
-            [TestMethod]
+        [TestMethod]
 
-            public void Classes()
+        public void Classes()
+        {
 
-            {
-                Random rng = new Random();
 
-                int randomNumber = rng.Next();
+            Random rng = new Random();
 
-                Console.WriteLine(randomNumber);
-            }
+            int randomNumber = rng.Next();
+
+            Console.WriteLine(randomNumber);
+
 
 
         }
